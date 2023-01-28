@@ -1,8 +1,8 @@
 import React from 'react';
 
-const DICE_BUTTON = ({sides, dieToRoll}) => {
+const DICE_BUTTON = ({sides, setDieToRoll}) => {
     return (
-        <button onClick={() => dieToRoll(sides)}>d{sides}</button>
+        <button onClick={() => setDieToRoll(sides)}>d{sides}</button>
     );
 };
 
