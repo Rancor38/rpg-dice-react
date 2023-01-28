@@ -3,17 +3,24 @@ import React from 'react';
 const SHOW_RESULT = ({ results, total }) => {
     if (!results) {
         return (
-            <h1> Nada nada</h1>
+            <>
+            <h2>Results:</h2>
+            <h2>Total:</h2>
+            </>
         )
     }
     return (
         <>
-            <div>{results.map((result) => {
+            <div>
+                <h2>
+                 Results:   
+                </h2>
+                {results.map((result) => {
                 return (
-                    <h1>{ result }</h1>
+                    <p>{ result },</p>
                     )
                 })}</div>
-            <h1>Total: {total}</h1>        
+            <h2>Total: {total}</h2>        
         </>
         );
 };
