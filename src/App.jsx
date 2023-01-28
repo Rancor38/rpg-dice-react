@@ -20,8 +20,14 @@ const App = () => {
     <div>
       
       <QUANTITY_FORM dieToRoll={ setDieToRoll } setQuantity={ setQuantity } quantity={ quantity } />
+      <DICE_BUTTON sides={ 2 } setDieToRoll={ setDieToRoll } />
       <DICE_BUTTON sides={ 4 } setDieToRoll={ setDieToRoll } />
       <DICE_BUTTON sides={ 6 } setDieToRoll={ setDieToRoll } />
+      <DICE_BUTTON sides={ 8 } setDieToRoll={ setDieToRoll } />
+      <DICE_BUTTON sides={ 10 } setDieToRoll={ setDieToRoll } />
+      <DICE_BUTTON sides={ 12 } setDieToRoll={ setDieToRoll } />
+      <DICE_BUTTON sides={ 20 } setDieToRoll={ setDieToRoll } />
+      <DICE_BUTTON sides={ 100 } setDieToRoll={ setDieToRoll } />
       <ROLL_BUTTON
         setResults={setResults}
         setTotal={setTotal}
