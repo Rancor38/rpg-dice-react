@@ -77,7 +77,7 @@ const App = () => {
                 <section className="results-section">
                     <SHOW_RESULT results={results} total={total} />
                 </section>
-                <section className="roll-button-section">
+                <section className="roll-section">
                     <ROLL_BUTTON
                         setResults={setResults}
                         setTotal={setTotal}
