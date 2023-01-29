@@ -36,41 +36,57 @@ const App = () => {
                             sides={2}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                         <DICE_BUTTON
                             sides={4}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                         <DICE_BUTTON
                             sides={6}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                         <DICE_BUTTON
                             sides={8}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                         <DICE_BUTTON
                             sides={10}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                         <DICE_BUTTON
                             sides={12}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                         <DICE_BUTTON
                             sides={20}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                         <DICE_BUTTON
                             sides={100}
                             dieToRoll={dieToRoll}
                             setDieToRoll={setDieToRoll}
+                            quantity={quantity}
+                            setQuantity={setQuantity}
                         />
                     </div>
                 </section>

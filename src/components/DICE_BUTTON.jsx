@@ -1,6 +1,7 @@
 import { d2, d4, d6, d8, d10, d20, d100, d12 } from "../images/index";
+import { useDoubleTap } from "use-double-tap";
 
-const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll }) => {
+const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll, quantity, setQuantity }) => {
     const diceImages = {
         2: d2,
         4: d4,
@@ -12,9 +13,25 @@ const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll }) => {
         100: d100,
     };
 
+    
+
+    const addOrSelect = useDoubleTap(() => {
+        const onePlusQuant = quantity + 1
+        const addOne = () => {
+            setQuantity(onePlusQuant)
+        }
+        addOne()
+    }, 300, {
+        onSingleTap() {
+            setDieToRoll(sides)
+        }
+      });
+
     if (dieToRoll === sides) {
         return (
-            <div className="die" onClick={() => setDieToRoll(sides)}>
+            <div {...addOrSelect}
+                className="die"
+            >
                 <img
                     className="currentDie die-centered"
                     id={`d${sides}`}
