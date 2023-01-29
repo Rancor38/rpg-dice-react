@@ -1,0 +1,8 @@
+export const d2 = require('./d2.png')
+export const d4 = require('./d4.png')
+export const d6 = require('./d6.png')
+export const d8 = require('./d8.png')
+export const d10 = require('./d10.png')
+export const d12 = require('./d12.png')
+export const d20 = require('./d20.png')
+export const d100 = require('./d100.png')
