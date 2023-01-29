@@ -1,11 +1,12 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import DICE_BUTTON from "./components/DICE_BUTTON";
 import QUANTITY_FORM from "./components/QUANTITY_FORM";
 import ROLL_BUTTON from "./components/ROLL_BUTTON";
 import SHOW_RESULT from "./components/SHOW_RESULT";
 import TITLE_BAR from "./components/TITLE_BAR";
 import KEYPRESS_MONITOR from "./components/KEYPRESS_MONITOR";
+import HELP_BUTTON from "./components/HELP_BUTTON";
 
 const App = () => {
     const [dieToRoll, setDieToRoll] = useState(20);
@@ -84,7 +85,8 @@ const App = () => {
                         quantity={quantity}
                     />
                 </section>
-            </main>
+        </main>
+        <HELP_BUTTON/>
             <KEYPRESS_MONITOR
                 setResults={setResults}
                 setTotal={setTotal}

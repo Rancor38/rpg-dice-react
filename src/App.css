@@ -249,4 +249,7 @@ img {
         font-size: larger;
         text-overflow: clip;
     }
+    .help-button{
+        display: none;
+    }
 }
