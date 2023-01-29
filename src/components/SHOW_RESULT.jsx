@@ -4,17 +4,18 @@ const SHOW_RESULT = ({ results, total }) => {
     if (!results) {
         return (
             <>
-            <h2>Results:</h2>
+                <h2>Results:</h2>
+                <div className="results"></div>
             <h2>Total:</h2>
             </>
         )
     }
     return (
         <>
-            <div>
                 <h2>
                  Results:   
                 </h2>
+            <div className='results'>
                 {results.map((result) => {
                 return (
                     <p>{ result },</p>

@@ -14,7 +14,7 @@ const ROLL_BUTTON = ({ setResults, setTotal, dieToRoll, quantity }) => {
 }
 
     return (
-        <button onClick={rollDice}>Roll!</button>
+        <button id='roll-button' onClick={rollDice}>Roll!</button>
     );
 };
 
