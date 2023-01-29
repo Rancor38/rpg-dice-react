@@ -17,7 +17,7 @@ const App = () => {
         <>
             <header className="title">
                 <TITLE_BAR />
-            </header>
+        </header>
             <main className="main">
                 <section className="quantity-section">
                     <h2>Quantity:</h2>

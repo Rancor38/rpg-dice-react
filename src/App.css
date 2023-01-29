@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poiret+One&family=Source+Code+Pro:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 * {
-    font-family: "Amatic SC", cursive;
-    font-family: "Poiret One", cursive;
-    font-family: "Source Code Pro", monospace;
+    font-family: 'Aboreto', cursive;
 }
 
 button {
@@ -75,10 +73,10 @@ input[type="number"]:hover {
 
 .title {
     background-color: dodgerblue;
-    min-height: 10vh;
     text-align: center;
     color: whitesmoke;
     text-shadow: 1px 1px 3px black;
+    padding: 5px;
 }
 
 .title-h1 {
@@ -98,7 +96,7 @@ input[type="number"]:hover {
     text-shadow: 1px 1px 3px black;
     min-height: 70vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: .7fr 1.8fr 1fr;
     grid-template-rows: repeat(3);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -131,11 +129,35 @@ input[type="number"]:hover {
 .dialpad {
     display: flex;
     flex-wrap: wrap;
+    padding: 16px;
 }
 
 .currentDie {
-    border: double white 2px;
-    box-shadow: none;
+    scale: 1.1;
+    filter: brightness(900%) grayscale() drop-shadow(0px 0px 10px #ffffff);
+    transition: 0.2s;
+}
+
+.die {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    transition: scale 1s;
+}
+
+.die:hover {
+    scale: 1.1;
+    transition: scale 0.2s;
+}
+
+.die-centered {
+    grid-area: 1/1/1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .results-section {
@@ -171,19 +193,44 @@ input[type="number"]:hover {
     transition: scale 1s;
 }
 
-#roll-button {
-    min-width: 30vw;
-    aspect-ratio: 16/3;
-}
-
 section {
     min-height: fit-content;
     text-align: center;
 }
 
-#d2 {
-    
+img {
+    z-index: -1;
+    max-width: 100px;
+    max-height: 100px;
+    filter: drop-shadow(6px 2px 4px #000000);
+    transition: scale 1s;
+    filter: brightness(900%) grayscale() drop-shadow(6px 4px 1px #000000);
 }
+
+#d2{
+    scale: 1.1;
+}
+
+#d4{
+    scale: .9;
+}
+
+#d6{
+    border: solid black;
+    scale: .9;
+}
+
+#d12{
+    scale: 1.1;
+}
+#d20{
+    scale: 1.2;
+}
+#d100{
+    scale: 1.4;
+}
+
+
 
 @media screen and (max-width: 800px) {
     .quantity-section {
@@ -197,5 +244,9 @@ section {
     }
     .roll-button {
         grid-area: 4/1/5/4;
+    }
+    h1{
+        font-size: larger;
+        text-overflow: clip;
     }
 }
