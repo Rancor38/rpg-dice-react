@@ -11,7 +11,7 @@ const QUANTITY_FORM = ({ quantity, setQuantity, setResults, dieToRoll }) => {
         setQuantity(e.target.value);
         setResults(null)
         e.target[0].value = e.target.value;
-        dieToRoll(null);
+        dieToRoll(6);
     };
 
     return (
