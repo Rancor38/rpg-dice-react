@@ -16,9 +16,9 @@ const SHOW_RESULT = ({ results, total }) => {
                  Results:   
                 </h2>
             <div className='results'>
-                {results.map((result) => {
+                {results.map((result, index) => {
                 return (
-                    <p>{ result },</p>
+                    <p key={index}>{ result },</p>
                     )
                 })}</div>
             <h2>Total: {total}</h2>        

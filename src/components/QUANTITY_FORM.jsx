@@ -16,7 +16,6 @@ const QUANTITY_FORM = ({ quantity, setQuantity, setResults, dieToRoll }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
                 <input
                     type="number"
                     min="1"
@@ -24,7 +23,6 @@ const QUANTITY_FORM = ({ quantity, setQuantity, setResults, dieToRoll }) => {
                     onChange={handleChange}
                     value={quantity}
                 ></input>
-            </label>
             <input type="submit" value="Reset" />
         </form>
     );

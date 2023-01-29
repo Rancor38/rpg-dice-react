@@ -1,14 +1,15 @@
 import "./App.css"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import DICE_BUTTON from './components/DICE_BUTTON';
 import QUANTITY_FORM from './components/QUANTITY_FORM';
 import ROLL_BUTTON from './components/ROLL_BUTTON';
 import SHOW_RESULT from './components/SHOW_RESULT';
 import TITLE_BAR from "./components/TITLE_BAR";
+import KEYPRESS_MONITOR from "./components/KEYPRESS_MONITOR";
 
 const App = () => {
 
-  const [dieToRoll, setDieToRoll] = useState(null)
+  const [dieToRoll, setDieToRoll] = useState(20)
   const [quantity, setQuantity] = useState(1)
   const [results, setResults] = useState(null)
   const [total, setTotal] = useState(null)
@@ -48,6 +49,12 @@ const App = () => {
         />
         </section>
       </main>
+      <KEYPRESS_MONITOR
+      setResults={setResults}
+      setTotal={setTotal}
+      dieToRoll={dieToRoll}
+      quantity={quantity}
+      />
         </>
   );
 };
