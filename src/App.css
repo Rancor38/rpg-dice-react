@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
 
 * {
-    font-family: 'Aboreto', cursive;
+    font-family: "Aboreto", cursive;
 }
 
 button {
@@ -45,8 +45,8 @@ input[type="submit"]:active {
 }
 
 input[type="submit"]:hover {
-        scale: 1.1;
-        transition: scale 0.2s;
+    scale: 1.1;
+    transition: scale 0.2s;
 }
 
 input[type="number"] {
@@ -93,7 +93,7 @@ input[type="number"]:hover {
     text-shadow: 1px 1px 3px black;
     min-height: 70vh;
     display: grid;
-    grid-template-columns: .7fr 1.8fr 1fr;
+    grid-template-columns: 0.7fr 1.8fr 1fr;
     grid-template-rows: repeat(3);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -215,30 +215,28 @@ img {
     filter: brightness(900%) grayscale() drop-shadow(6px 4px 1px #000000);
 }
 
-#d2{
+#d2 {
     scale: 1.1;
 }
 
-#d4{
-    scale: .9;
+#d4 {
+    scale: 0.9;
 }
 
-#d6{
+#d6 {
     border: solid black;
-    scale: .9;
+    scale: 0.9;
 }
 
-#d12{
+#d12 {
     scale: 1.1;
 }
-#d20{
+#d20 {
     scale: 1.2;
 }
-#d100{
+#d100 {
     scale: 1.4;
 }
-
-
 
 @media screen and (max-width: 800px) {
     .quantity-section {
@@ -253,11 +251,11 @@ img {
     .roll-button {
         grid-area: 4/1/5/4;
     }
-    h1{
+    h1 {
         font-size: larger;
         text-overflow: clip;
     }
-    .help-button{
+    .help-button {
         display: none;
     }
 }
