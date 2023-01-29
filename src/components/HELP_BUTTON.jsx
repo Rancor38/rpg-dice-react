@@ -27,6 +27,7 @@ const HELP_BUTTON = () => {
                         Currently selected dice have a white highlight and no
                         shadow.
                     </li>
+                    <li>Doubleclicking a die (or doubletaping on mobile) will add +1 to the current quantity</li>
                     <h3>Hotkeys:</h3>
                     <li>
                         Press "shift" + "4" to set the quantity of dice to 4.
