@@ -18,9 +18,11 @@ const App = () => {
         <>
             <header className="title">
                 <TITLE_BAR />
-        </header>
+            </header>
             <main className="main">
-                <section className="quantity-section">
+                <section
+                    className="quantity-section"
+                >
                     <h2>Quantity:</h2>
                     <QUANTITY_FORM
                         dieToRoll={setDieToRoll}
@@ -29,7 +31,9 @@ const App = () => {
                         quantity={quantity}
                     />
                 </section>
-                <section className="dice-type-section">
+                <section
+                    className="dice-type-section"
+                >
                     <h2>Dice Type</h2>
                     <div className="dialpad">
                         <DICE_BUTTON
@@ -74,10 +78,12 @@ const App = () => {
                         />
                     </div>
                 </section>
-                <section className="results-section">
+                <section
+                    className="results-section"
+                >
                     <SHOW_RESULT results={results} total={total} />
                 </section>
-                <section className="roll-button">
+                <section className="roll-button-section">
                     <ROLL_BUTTON
                         setResults={setResults}
                         setTotal={setTotal}
@@ -85,8 +91,8 @@ const App = () => {
                         quantity={quantity}
                     />
                 </section>
-        </main>
-        <HELP_BUTTON/>
+            </main>
+            <HELP_BUTTON />
             <KEYPRESS_MONITOR
                 setResults={setResults}
                 setTotal={setTotal}

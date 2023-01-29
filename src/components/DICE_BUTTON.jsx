@@ -1,4 +1,4 @@
-import {d2, d4, d6, d8, d10, d20, d100, d12} from '../images/index'
+import { d2, d4, d6, d8, d10, d20, d100, d12 } from '../images/index'
 
 const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll }) => { 
 
@@ -17,7 +17,7 @@ const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll }) => {
         return (
             <div className='die' onClick={() => setDieToRoll(sides)} >
                 <img className='currentDie die-centered' id={`d${sides}`} src={diceImages[sides]} alt={sides} />
-                <p className='die-centered'>{ sides }</p>
+                <p className='die-centered die-number'>{ sides }</p>
             {/* <button className='currentDie' onClick={() => setDieToRoll(sides)}>d{sides}</button> */}
             </div>
         )
@@ -25,7 +25,7 @@ const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll }) => {
     return (
         <div className='die' onClick={() => setDieToRoll(sides)} >
             <img className='die-centered' id={`d${sides}`} src={diceImages[sides]} alt={sides} onClick={() => setDieToRoll(sides)} />
-                <p className='die-centered'>{ sides }</p>
+                <p className='die-centered die-number'>{ sides }</p>
             {/* <button className='currentDie' onClick={() => setDieToRoll(sides)}>d{sides}</button> */}
             </div>
     );

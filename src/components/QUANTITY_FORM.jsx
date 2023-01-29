@@ -1,5 +1,3 @@
-import React from "react";
-
 const QUANTITY_FORM = ({ quantity, setQuantity, setResults, dieToRoll }) => {
     const handleChange = (e) => {
         e.preventDefault();
@@ -23,7 +21,7 @@ const QUANTITY_FORM = ({ quantity, setQuantity, setResults, dieToRoll }) => {
                     onChange={handleChange}
                     value={quantity}
                 ></input>
-            <input type="submit" value="Reset" />
+            <button type="submit" value="Reset">Reset</button>
         </form>
     );
 };

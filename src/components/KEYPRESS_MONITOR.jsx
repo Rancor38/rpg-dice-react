@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import {diceSound} from "../audio/index"
 
 const KEYPRESS_MONITOR = ({ setResults, setTotal, dieToRoll, quantity, setQuantity }) => {
     let numArr = [];
@@ -10,6 +11,8 @@ const KEYPRESS_MONITOR = ({ setResults, setTotal, dieToRoll, quantity, setQuanti
             setResults(numArr);
             setTotal(numArr.reduce((prev, curr) => prev + curr));
         }
+        diceSound.load()
+            diceSound.play()
         numArr = [];
     };
 

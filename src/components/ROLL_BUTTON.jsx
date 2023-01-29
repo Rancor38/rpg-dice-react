@@ -1,4 +1,4 @@
-import React from 'react';
+import { diceSound } from "../audio";
 
 const ROLL_BUTTON = ({ setResults, setTotal, dieToRoll, quantity }) => {
 
@@ -11,6 +11,8 @@ const ROLL_BUTTON = ({ setResults, setTotal, dieToRoll, quantity }) => {
         setResults(numArr)
         setTotal(numArr.reduce((prev, curr) => prev + curr))
     }
+    diceSound.load()
+    diceSound.play()
 }
 
     return (

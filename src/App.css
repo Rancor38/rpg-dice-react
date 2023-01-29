@@ -25,7 +25,6 @@ button:active {
 button:hover {
     scale: 1.1;
     transition: scale 0.2s;
-    box-shadow: 0px 0px 6px whitesmoke;
 }
 
 input[type="submit"] {
@@ -48,7 +47,6 @@ input[type="submit"]:active {
 input[type="submit"]:hover {
         scale: 1.1;
         transition: scale 0.2s;
-        box-shadow: 0px 0px 6px whitesmoke;
 }
 
 input[type="number"] {
@@ -68,11 +66,10 @@ input[type="number"] {
 input[type="number"]:hover {
     scale: 1.1;
     transition: scale 0.2s;
-    box-shadow: 0px 0px 6px whitesmoke;
 }
 
 .title {
-    background-color: dodgerblue;
+    background-color: rgb(255, 97, 45);
     text-align: center;
     color: whitesmoke;
     text-shadow: 1px 1px 3px black;
@@ -91,7 +88,7 @@ input[type="number"]:hover {
 
 .main {
     border: solid white 3px;
-    background-color: darkslateblue;
+    background-color: rgb(54, 40, 145);
     color: whitesmoke;
     text-shadow: 1px 1px 3px black;
     min-height: 70vh;
@@ -103,17 +100,20 @@ input[type="number"]:hover {
 }
 
 .quantity-section {
+    background-color: inherit;
     border: inherit;
     grid-area: 1/1/2/2;
     scale: 1;
     transition: scale 1s;
 }
 .quantity-section:hover {
-    scale: 1.01;
+    scale: 1.03;
     transition: scale 1s;
+    z-index: 1;
 }
 
 .dice-type-section {
+    background-color: inherit;
     border: inherit;
     grid-area: 1/2/2/3;
     display: flex;
@@ -122,8 +122,9 @@ input[type="number"]:hover {
     transition: scale 1s;
 }
 .dice-type-section:hover {
-    scale: 1.005;
+    scale: 1.03;
     transition: scale 1s;
+    z-index: 1;
 }
 
 .dialpad {
@@ -160,14 +161,20 @@ input[type="number"]:hover {
     align-items: center;
 }
 
+.die-number {
+    z-index: 5;
+}
+
 .results-section {
+    background-color: inherit;
     border: inherit;
     grid-area: 1/3/2/4;
     transition: scale 1s;
 }
 .results-section:hover {
-    scale: 1.005;
+    scale: 1.03;
     transition: scale 1s;
+    z-index: 1;
 }
 
 .results {
@@ -179,7 +186,8 @@ input[type="number"]:hover {
     overflow: scroll;
 }
 
-.roll-button {
+.roll-button-section {
+    background-color: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,9 +196,10 @@ input[type="number"]:hover {
     grid-area: 2/1/3/4;
     transition: scale 1s;
 }
-.roll-button:hover {
-    scale: 1.005;
+.roll-button-section:hover {
+    scale: 1.02;
     transition: scale 1s;
+    z-index: 1;
 }
 
 section {
@@ -199,7 +208,6 @@ section {
 }
 
 img {
-    z-index: -1;
     max-width: 100px;
     max-height: 100px;
     filter: drop-shadow(6px 2px 4px #000000);
