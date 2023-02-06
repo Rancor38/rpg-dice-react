@@ -7,7 +7,7 @@ RPG-Dice-Roller is an application for rolling polyhedral dice for tabletop rollp
 <img width="1427" alt="Screenshot of site" src="./public/screenshot_of_site.png">
 
 ## TECHNOLOGIES USED
-The application is built in [React](https://reactjs.org/), a [Javascript-based](https://www.javascript.com/) framework with integrated, [HTML](https://html.spec.whatwg.org/multipage/) and [CSS](https://www.w3.org/TR/CSS/),The app was published on [Netlify](https://rpg-dice-react.netlify.app/).
+The application is built in [React](https://reactjs.org/), a [Javascript-based](https://www.javascript.com/) framework with integrated, [HTML](https://html.spec.whatwg.org/multipage/) and [CSS](https://www.w3.org/TR/CSS/). The app was published on [Netlify](https://rpg-dice-react.netlify.app/).
 
 ## WIREFRAME
 The application was always planned to be a single-page web application; this wireframe was created in [Google Slides](https://www.google.com/slides/about/).
