@@ -19,7 +19,9 @@ const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll, quantity, setQuantity }) 
         const currentQuant = Number(quantity)
         const onePlusQuant = currentQuant+1
         const addOne = () => {
-            setQuantity(onePlusQuant)
+            if (quantity < 100) {
+                setQuantity(onePlusQuant)
+        }
         }
         addOne()
     }, 300, {
