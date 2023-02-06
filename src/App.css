@@ -162,6 +162,7 @@ input[type="number"]:hover {
 }
 
 .die-number {
+    user-select: none;
     z-index: 5;
 }
 
