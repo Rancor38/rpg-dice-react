@@ -69,7 +69,7 @@ input[type="number"]:hover {
 }
 
 .title {
-    background-color: rgba(45, 174, 255, 0.707);
+    background-color: rgb(34, 139, 204);
     text-align: center;
     color: whitesmoke;
     text-shadow: 1px 1px 3px black;
@@ -88,7 +88,7 @@ input[type="number"]:hover {
 
 .main {
     border: solid white 3px;
-    background-color: rgba(54, 40, 145, 0.683);
+    background-color: #4c5caf;
     color: whitesmoke;
     text-shadow: 1px 1px 3px black;
     min-height: 70vh;

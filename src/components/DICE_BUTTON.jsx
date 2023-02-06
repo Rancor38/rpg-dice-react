@@ -16,9 +16,12 @@ const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll, quantity, setQuantity }) 
     
 
     const addOrSelect = useDoubleTap(() => {
-        const onePlusQuant = quantity + 1
+        const currentQuant = Number(quantity)
+        const onePlusQuant = currentQuant+1
         const addOne = () => {
-            setQuantity(onePlusQuant)
+            if (quantity < 100) {
+                setQuantity(onePlusQuant)
+        }
         }
         addOne()
     }, 300, {
