@@ -16,8 +16,11 @@ const App = () => {
 
     return (
         <>
+                <a className="github-tag" href="https://github.com/Rancor38/rpg-dice-react">
+        <img src="https://symbols.getvecta.com/stencil_65/6_github.a79e66470c.svg" alt="github" />
+                </a>
             <header className="title">
-                <TITLE_BAR />
+                 <TITLE_BAR />
             </header>
             <main className="main">
                 <section className="quantity-section">
