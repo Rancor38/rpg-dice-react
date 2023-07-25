@@ -1,6 +1,6 @@
-# RPG-Dice-Roller
+# RPG-Dice-React
 
-RPG-Dice-Roller is an application for rolling polyhedral dice for tabletop rollplaying games.
+RPG-Dice-React is an application for rolling polyhedral dice for tabletop rollplaying games.
 
 
 ## PICTURE OF WEBSITE
