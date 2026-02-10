@@ -1,7 +1,7 @@
 import { d2, d4, d6, d8, d10, d20, d100, d12 } from "../images/index";
 import { useDoubleTap } from "use-double-tap";
 
-const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll, quantity, setQuantity }) => {
+const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll, quantity, setQuantity, pressingDie }) => {
     const diceImages = {
         2: d2,
         4: d4,
@@ -13,50 +13,38 @@ const DICE_BUTTON = ({ sides, dieToRoll, setDieToRoll, quantity, setQuantity }) 
         100: d100,
     };
 
-    
+    const isPressing = pressingDie === sides;
+    const isSelected = dieToRoll === sides;
 
     const addOrSelect = useDoubleTap(() => {
         const currentQuant = Number(quantity)
-        const onePlusQuant = currentQuant+1
+        const onePlusQuant = currentQuant + 1
         const addOne = () => {
             if (quantity < 100) {
                 setQuantity(onePlusQuant)
-        }
+            }
         }
         addOne()
     }, 300, {
         onSingleTap() {
             setDieToRoll(sides)
         }
-      });
+    });
 
-    if (dieToRoll === sides) {
-        return (
-            <div {...addOrSelect}
-                className="die"
-            >
-                <img
-                    className="currentDie die-centered"
-                    id={`d${sides}`}
-                    src={diceImages[sides]}
-                    alt={sides}
-                />
-                <p className="die-centered die-number">{sides}</p>
-                {/* <button className='currentDie' onClick={() => setDieToRoll(sides)}>d{sides}</button> */}
-            </div>
-        );
-    }
+    const dieClassName = isPressing ? "die pressingDie" : "die";
+    const imgClassName = isSelected
+        ? "currentDie die-centered"
+        : "die-centered";
+
     return (
-        <div className="die" onClick={() => setDieToRoll(sides)}>
+        <div {...addOrSelect} className={dieClassName}>
             <img
-                className="die-centered"
+                className={imgClassName}
                 id={`d${sides}`}
                 src={diceImages[sides]}
                 alt={sides}
-                onClick={() => setDieToRoll(sides)}
             />
             <p className="die-centered die-number">{sides}</p>
-            {/* <button className='currentDie' onClick={() => setDieToRoll(sides)}>d{sides}</button> */}
         </div>
     );
 };
